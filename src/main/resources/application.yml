@@ -6,10 +6,11 @@ spring:
   datasource:
     url: 'jdbc:postgresql://localhost:5432/test?ApplicationName=MultiTenant'
     username: 'postgres'
-    password: 'postgres'
+    password: 'dbslgusl2Qh'
     driver-class-name: org.postgresql.Driver
   jpa:
     properties:
       hibernate:
+        ddl-auto: update
         hbm2ddl:
           auto: none
